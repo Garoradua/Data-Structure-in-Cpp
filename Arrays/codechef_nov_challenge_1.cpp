@@ -6,10 +6,11 @@ int main(){
 	int val;
 	cin >> val;
 	int count =0;
-	int validate_arr[256];
-	for(int i=0; i<256; i++){
-		validate_arr[i] =0;
-	}
+	int validate_arr[256] = {0};
+	// Below is the best pratcice to initalize all are 0
+	// for(int i=0; i<256; i++){
+	// 	validate_arr[i] =0;
+	// }
 	for(int i=2; i<129; i++){
 		if(validate_arr[arr[i-1]]==0){
 			arr[i]=0;
