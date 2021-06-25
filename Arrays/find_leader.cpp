@@ -18,10 +18,8 @@
       for(int i=n-2; i>=0; i--){
       if(a[i]>a[i+1]){
         k=0
-        cout << a[i] << " ";
-      }else{
-        k=1;
-        break;
+        // cout << a[i] << " ";
+     
       }
        
         }

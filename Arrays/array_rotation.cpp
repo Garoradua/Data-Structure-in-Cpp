@@ -1,25 +1,49 @@
-#include<iostream>
-using namespace std;
-int main(){
-	int a[] = {1,2,3,4,5,6};
-	int n=6;
-	// left shift 2 position
-	int d =2;
-	int temp[2];
-
-	for(int i=0; i<d; i++){
-		temp[i]= a[i];
-	}
-
-	for(int i=0; i<n-d; i++){
-		a[i] = a[i+2];
-	}
-	int j=0;
-	for(int i=n-d; i<n; i++){
-		a[i] = temp[j++];
-	}
-
-	for(int i=0; i<n; i++){
-		cout << a[i] << " ";
-	}
-}
+#include <bits/stdc++.h>
+  using namespace std;
+  
+  // voi
+  
+  void rotation(int arr[], int start, int end){
+    int i = start;
+    int j = end;
+    int temp;
+    if(i>j){
+      return;
+    }
+    while(i<j){
+      temp = arr[i];
+      arr[i] = arr[j];
+      arr[j]= temp;
+      i++;
+      j--;
+    }
+    
+  }
+  int main()
+  {
+    //write your code here
+    int t;
+    cin >> t;
+    while(t--){
+      int n;
+      int k;
+      cin >> n;
+      cin >> k;
+      int a[n];
+      for(int i=0; i<n; i++){
+        cin >> a[i];
+      }
+      if(k>n){
+        k = k%n;
+      }
+    rotation(a, 0, n);
+    rotation(a, 0, k);
+    rotation(a, k, n);
+    for(int i=0; i<n; i++){
+      cout << a[i] << " ";
+    }
+    }
+    
+    return 0;
+ 
+  }
