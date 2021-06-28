@@ -15,12 +15,22 @@ int main(){
 
 
 	// string from beginning
-	for(itr1 = str1.begin(); itr1!=str1.end(); itr1++){
-		cout << *itr1;
-	}
+	// for(itr1 = str1.begin(); itr1!=str1.end(); itr1++){
+	// 	cout << *itr1;
+	// }
+	// cout << endl;
+	// // string from reverse
+	// for(itr2 = str1.rbegin(); itr2!=str1.rend(); itr2++){
+	// 	cout << *itr2;
+	// }
+	// cout << endl;
 
-	// string from reverse
-	for(itr2 = str1.rbegin(); itr2!=str1.rend(); itr2++){
-		cout << *itr2;
-	}
+	str2="gourav";
+	char ch[3];
+	str2.copy(ch, 3, 0);
+	cout << ch <<endl;
+	cout << endl;
+
+
+
 }
