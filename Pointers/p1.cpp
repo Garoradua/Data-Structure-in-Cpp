@@ -12,6 +12,7 @@ int main(){
 	ptr = &a;
 	cout << *ptr;
 	// int *ptr = &a;
+	
 	// // cout <<*ptr++ << endl;
 	// cout <<*ptr++ << endl;
 	// cout <<*ptr++ << endl;
